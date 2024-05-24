@@ -1,24 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Second Task</title>
-</head>
-<body>
-    <div class="collage">
-        <div class="frist-img">
-            <img src="tast-2 img/car-1.jpg" alt="">
-        </div>
 
-        <div class="second-img">
-            <img src="tast-2 img/car-2.jpg" alt="">
-        </div>
-        <div class="thard-img">
-            <img src="tast-2 img/car-3.webp" alt="">
-            <img src="tast-2 img/car-4.jpeg" alt="">
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Second Task</title>
+  <style>
+    .collage {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .Veiw-1 {
+      background-color: red;
+      height: 620px;
+      width: 676px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+    }
+
+    .Veiw-2 {
+      background-color: blue;
+      height: 310px;
+      width: 680px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+    }
+
+    .dis-flex {
+      display: flex;
+
+    }
+
+    .Veiw-3 {
+      background-color: green;
+      height: 310px;
+      width: 340px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: auto;
+      border-radius: 5px;
+
+
+    }
+
+    .Veiw-4 {
+      background-color: goldenrod;
+      height: 310px;
+      width: 340px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+    }
+
+    @media screen and (max-width:576px) {
+      .collage {
+        grid-template-columns: 1fr;
+      }
+
+      .Veiw-1 {
+        width: 100%;
+      }
+
+      .Veiw-2 {
+        width: 100%
+      }
+
+      .Veiw-3 {
+        width: 100%
+      }
+
+      .Veiw-4 {
+        width: 100%
+      }
+      /* div{
+        height: 100%;
+        width: 100%;
+      } */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="collage">
+    <div>
+      <div class="Veiw-1">
+        <h1>Veiw-1</h1>
+      </div>
     </div>
-    
+    <div class="padding">
+      <div class="Veiw-2">
+        <h1>Veiw-2</h1>
+      </div>
+      <div class="dis-flex">
+        <div class="Veiw-3">
+          <h1> Veiw-3</h1>
+        </div>
+        <div class="Veiw-4">
+          <h1> Veiw-4</h1>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
 </body>
+
 </html>
