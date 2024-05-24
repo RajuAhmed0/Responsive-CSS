@@ -5,31 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive-Task</title>
     <style>
-        .pic-right{
-            width: 100%;
-            height: 400px;
-            background-image: url(pexels-pixabay-35967.jpg);
-            background-repeat: no-repeat;
-            background-size: contain;
-            border: 1px solid red;
-            float: right;
-        }
-        .dis-left{
-
-        }
+       
+       .Box{
+        /* width: 100%; */
+       height: 600px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* border: 5px solid rgb(255, 0, 0); */
+        border-radius: 5px;
+        /* column-gap: 200px; */
         
+
+       }
+         .Frist-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: darkgoldenrod;
+            border: 3px solid black;
+            border-radius: 5px;
+   
+         }
+         .Secend-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: forestgreen;
+            border: 3px solid rgb(115, 193, 245);
+            border-radius: 5px;
+           
+         }
+        @media screen and (max-width: 576px) {
+            .Box{
+                grid-template-columns: 1fr ;
+            }
+            
+        }
 
 
     </style>
 </head>
 <body>
-<div class="pic-right"></div>
-    <div class="dis-left">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nostrum officia laborum, eius adipisci sapiente quibusdam inventore ex enim veritatis!
-        </p>
-
-    
+<div class="Box">
+    <div class="Frist-box">
+        <h1>Left-side</h1>
+     </div>
+    <div class="Secend-box">
+        <h1>Right-site</h1>
     </div>
+</div>
 
     
 </body>
