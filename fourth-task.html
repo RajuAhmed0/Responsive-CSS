@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Fourth-task</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* display: flex; */
+            width: 100%;
+            /* height: 100%; */
+            
+        }
+        .text-box, .img-box {
+            border: 5px solid red;
+            border-radius: 5px;
+            /* height: 600px;
+            width: 700px; */
+            width: calc(100% -20px);
+        
+            
+        }
+        .img-box{
+            border: 5px solid blue;
+            /* border: none; */
+        }
+        img{
+            /* display: flex; */
+          
+            border-radius: 5px;
+            /* height: 600px;
+            width: 700px; */
+            height: 100%;
+            width: 100%;
+        }
+        @media screen and (max-width: 576px){
+            .container{
+                grid-template-columns: 1fr ;
+                /* width: 100%;
+                height: 100%; */
+            }
+            .text-box{
+                grid-row: 2;
+                /* width: 0%; */
+                /* height: 100%; */
+            }
+            .img-box{
+                grid-row: 1;
+
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-box">
+            <h1>Text-box</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda velit itaque repellendus odit facere, at deserunt modi architecto quia voluptatum mollitia? Ex nam minima unde accusantium vitae possimus quisquam nobis! Perspiciatis quis atque doloribus voluptatum, magnam iste praesentium quos aliquid temporibus sit accusamus voluptatibus cupiditate iure dicta officia qui dignissimos. Nam quidem a facere, quam eveniet ducimus quod natus dolore placeat nulla harum voluptates officia hic eum ipsam sint, quia libero tenetur nihil. Illum atque dolorem quidem velit, repellendus asperiores! Assumenda aut iusto, qui incidunt ut beatae ipsum autem, fuga, velit suscipit hic distinctio consequatur quo pariatur repellendus voluptatem dicta. Reiciendis dignissimos asperiores velit, magnam perferendis odio provident ipsam, incidunt, molestiae at eius minima fugiat ipsa iusto ducimus facere voluptas dolorem rem culpa beatae dicta reprehenderit. Vero officia quis quibusdam doloremque animi at laborum possimus harum architecto eligendi magni facilis unde, quisquam, autem, molestias provident omnis impedit. Quia dolore eveniet ullam corporis nesciunt fugit accusantium suscipit quasi aperiam? Debitis, maiores tempora soluta sequi corrupti saepe sit optio amet voluptatibus ipsa hic voluptas ex assumenda, quia repudiandae eligendi odio alias. Recusandae autem qui laboriosam omnis, iure, ullam reiciendis vitae numquam nulla magnam similique deleniti esse sit, unde fugiat quia cum tempora eaque. Consequatur, quos unde quod, reprehenderit accusantium obcaecati quasi ratione nihil amet asperiores corrupti saepe, velit iure expedita magni tempora perspiciatis fuga! Nemo magnam vitae veritatis, minima, recusandae facilis vel facere officia harum ducimus, omnis aliquid laudantium voluptatem. Explicabo minima alias doloribus, fuga deserunt culpa ut ipsam ea modi vel architecto, maiores ad nisi nesciunt voluptatum obcaecati ratione ex blanditiis? Nam veritatis, beatae eum incidunt ducimus eius laboriosam aspernatur facilis quibusdam dolores! Dolorum illum minima fugiat beatae ullam ea quam cupiditate, unde explicabo iste deleniti ex doloremque sequi quo labore delectus maxime repellat corporis itaque? Alias, itaque sint earum hic cum eum rem commodi rerum unde quo distinctio, soluta explicabo dolor recusandae. Molestiae voluptatibus eos neque dolorem fuga illo esse quod minus ad suscipit corrupti obcaecati deserunt rerum necessitatibus, temporibus incidunt blanditiis recusandae ipsa quasi officiis vel? Inventore maxime et est dignissimos, sunt, placeat totam laudantium, quaerat vitae voluptatem voluptatum!</p>
+        </div>
+        <div class="img-box">
+            <img src="tast-2 img/car-2.jpg" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>
