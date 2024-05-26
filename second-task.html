@@ -10,6 +10,7 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       height: 100%;
+      width: 100%;
     }
 
     .Veiw-1 {
@@ -34,7 +35,6 @@
 
     .dis-flex {
       display: flex;
-
     }
 
     .Veiw-3 {
@@ -61,12 +61,21 @@
     }
 
     @media screen and (max-width:576px) {
-      .collage {
+      .collage { 
         grid-template-columns: 1fr;
       }
         .Veiw-1{
-          height: 100%;
+          height: 310px;
           width: 100%;
+        }
+        .Veiw-3{
+          width: 680px;
+        }
+        .Veiw-4{
+          width: 680px;
+        }
+        .dis-flex{
+         flex-direction: column;
         }
     
     }
