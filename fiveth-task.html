@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiveth Task</title>
+    <style>
+        .container{
+           display: grid;
+           grid-template-columns: repeat(2, 1fr);
+
+        }
+        .img-one,.text-one,.text-two,.img-two{
+          border-radius: 5px;
+          height: 300px;
+          width: 660px;
+        }
+        .img-one{
+            border: 5px solid red;
+        }
+        .text-one{
+            border: 5px solid goldenrod;
+        }
+        .text-two{
+            border: 5px solid black;
+        }
+        .img-two{
+            border: 5px solid rebeccapurple;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        @media screen and (max-width:576px){
+            .container{
+                grid-template-columns: 1fr ;
+            }
+            img{
+                height: 100%;
+            }
+            
+            .text-two{
+                grid-row: 4;
+            }
+            .img-two{
+                grid-row: 3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div  class="container">
+        
+            <div class="img-one">
+                <img src="tast-2 img/pexels-mikebirdy-170811.jpg" alt="">
+            </div>
+            <div class="text-one">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas et deleniti ratione non, accusamus optio voluptates asperiores, placeat, eligendi sint illum consequatur porro pariatur reiciendis impedit obcaecati aut nesciunt esse dicta tempora vero odit. Nemo hic nostrum officiis, suscipit inventore est harum ullam eos, quia, libero id molestias. Nihil quas iste beatae rerum possimus? Est eligendi architecto nisi assumenda adipisci optio, molestiae iusto asperiores saepe eaque explicabo voluptatum nobis ullam qui possimus velit, corrupti nesciunt quisquam veritatis reiciendis ea. Minus facere ipsa consectetur animi nemo est quam odio commodi eaque ipsum odit quae quas vel hic, quasi aut consequatur explicabo consequuntur corrupti magnam! Nihil repellendus accusantium magnam culpa ea, incidunt necessitatibus quis ipsam quia eligendi libero aliquam corrupti! Officiis quia molestias dicta nihil consectetur reprehenderit quaerat, similique voluptatibus quod doloremque excepturi assumenda rerum est eius natus beatae voluptas. Saepe, ut, minima dolorem nihil rerum sed, minus voluptate aspernatur ipsum nesciunt repudiandae molestiae libero impedit modi aut facere reiciendis illum magnam provident! Quod quas numquam aperiam omnis cupiditate officiis odit, quis commodi quo quaerat eum ullam doloribus architecto id itaque fuga atque? Magni obcaecati recusandae voluptates, atque qui assumenda neque fugit eaque harum temporibus tenetur perferendis consequuntur incidunt. Maiores, culpa aliquid.</p>
+            </div>
+        
+            <div class="text-two">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur id maiores, expedita, cumque tempora nihil deleniti alias rem delectus asperiores enim sequi iure obcaecati quas consequatur nemo iste iusto totam minima voluptatibus aperiam doloremque! In velit esse placeat quod, praesentium molestias, neque nulla architecto dolor consequatur maxime totam! Dolorem illum iusto ducimus nostrum, quaerat tempore commodi porro reiciendis! Error nostrum iure commodi! Molestiae assumenda recusandae, porro iusto non dolor vel dignissimos quo ducimus odio vitae vero explicabo commodi. Delectus quo autem iusto minima consequuntur voluptas quae nisi, dignissimos neque perspiciatis, obcaecati aperiam! Rem vero et unde debitis quidem provident porro modi in dicta officia, odit nihil esse fuga ducimus ea est, magni totam, alias at neque nemo doloremque atque corrupti ut. Similique recusandae nostrum hic iusto nesciunt voluptas ipsa impedit architecto voluptatum libero totam voluptatem ex eos, obcaecati eaque, ipsum accusamus quia cumque in at! Rerum placeat nihil itaque, eos ipsam, tempore suscipit officiis vitae temporibus odio quas quidem. Est vero corrupti sunt odit cupiditate tempora ex molestias esse, a numquam recusandae repellendus assumenda ipsum quos culpa facilis voluptatibus iure provident eveniet soluta voluptate voluptatum perferendis sed optio. Ut voluptas alias praesentium quisquam totam! Voluptatum nesciunt fugiat officiis magnam tempora.</p>
+            </div>
+            <div class="img-two">
+                <img src="tast-2 img/sports-car-driving-asphalt-road-night-generative-ai_188544-8052.jpg" alt="">
+            </div>
+        
+        
+       
+    </div>
+    
+</body>
+</html>
